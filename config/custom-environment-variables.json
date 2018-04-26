@@ -1,0 +1,12 @@
+{
+  "server": {
+    "port": "CINEMATHEQUE_SERVER_PORT",
+    "cluster": "CINEMATHEQUE_SERVER_CLUSTER",
+    "protocol": "CINEMATHEQUE_SERVER_PROTOCOL",
+    "certFile": "CINEMATHEQUE_SERVER_CERTFILE",
+    "keyFile": "CINEMATHEQUE_SERVER_KEYFILE"
+  },
+  "log": {
+    "level": "CINEMATHEQUE_LOG_LEVEL"
+  }
+}
