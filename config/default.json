@@ -6,5 +6,12 @@
   },
   "log": {
     "level": "info"
+  },
+  "services": {
+    "elasticSearch": {},
+    "postgres": {
+      "dialect": "postgres",
+      "database": "cinemateque"
+    }
   }
 }

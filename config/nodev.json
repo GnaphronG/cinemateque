@@ -1,18 +1,20 @@
 {
   "server": {
     "protocol": "http",
-    "port": 8080,
+    "port": 8090,
     "certFile": "certs/localhost-cert.pem",
     "keyFile": "certs/localhost-privkey.pem"
   },
   "services": {
     "elasticSearch": {
-      "host": "localhost:9200"
+      "host": "elasticsearch:9200"
     },
     "postgres": {
-      "host": "localhost",
+      "host": "postgres",
       "username": "postgres",
-      "password": "postgres"
+      "password": "postgres",
+      "database": "cinemateque",
+      "dialect": "postgres"
     }
   }
 }

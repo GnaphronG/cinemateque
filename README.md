@@ -4,6 +4,15 @@ Koa2 based web service scaffolding
 
 ## Installation
 
+### Native
+```sh
+$ npm install
+$ docker-compose up -d
+$ export NODE_ENV=dev
+$ npm start
+```
+
+### Docker
 ```sh
 $ docker build -t cinematheque:local .
 $ docker run -d -p 8080:8080 --name cinematheque cinematheque:local
