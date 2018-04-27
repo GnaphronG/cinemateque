@@ -11,7 +11,8 @@
     "elasticSearch": {},
     "postgres": {
       "dialect": "postgres",
-      "database": "cinemateque"
+      "database": "cinemateque",
+      "operatorsAliases": false
     }
   }
 }
