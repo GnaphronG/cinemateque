@@ -1,5 +1,6 @@
 const Koa = require('koa');
 const koaLogger = require('koa-bunyan-logger');
+const koaBodyParser = require('koa-bodyparser');
 const logger = require('./lib/logger');
 const middlewares = require('./lib/middlewares');
 const router = require('./routes');
@@ -9,6 +10,7 @@ app.use(koaLogger(logger));
 app.use(koaLogger.requestIdContext());
 app.use(koaLogger.timeContext());
 app.use(koaLogger.requestLogger());
+app.use(koaBodyParser());
 
 app.use(middlewares.pragma());
 
